@@ -3,8 +3,6 @@ package main
 import (
 	"encoding/xml"
 	"fmt"
-
-	//"io/ioutil"
 	"log"
 	"net/http"
 
@@ -37,7 +35,6 @@ func allUsers(w http.ResponseWriter, r *http.Request) {
 			w.Write([]byte(file))
 			break
 		}
-		fmt.Println("User not found!")
 	}
 }
 
